@@ -209,6 +209,18 @@ h2 {
 
 .about-inner { max-width: 680px; }
 
+.about-content { margin-top: 8px; }
+
+.about-photo {
+  float: left;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 4px 24px 4px 0;
+  border: 3px solid var(--accent);
+}
+
 .about p { color: var(--text-dim); font-size: 1.05rem; }
 
 /* Proof / Results */
