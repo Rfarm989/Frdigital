@@ -166,10 +166,12 @@
     <h2>Ready to Get Found on Google?</h2>
     <p class="section-sub">Get a free site review and I'll walk you through the top things to improve your Google visibility.</p>
     <form class="contact-form" action="https://formspree.io/f/meebkgyy" method="POST">
+      <input type="hidden" name="_subject" value="New lead from frdigital.net">
       <input type="text" name="name" placeholder="Your name" required>
       <input type="email" name="email" placeholder="Your email" required>
-      <input type="url" name="website" placeholder="Your website URL">
+      <input type="text" inputmode="url" name="website" placeholder="Your website (e.g. yoursite.com)">
       <textarea name="goals" placeholder="Tell me about your goals" rows="4"></textarea>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button type="submit" class="btn btn-primary">Send</button>
     </form>
     <p class="direct">Prefer to reach out directly? Email <a href="mailto:ryan@frdigital.net">ryan@frdigital.net</a> or call <a href="tel:6303106046">630-310-6046</a>.</p>
