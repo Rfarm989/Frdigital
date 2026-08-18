@@ -15,4 +15,9 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://frdigital.net/blog/why-do-i-show-up-on-google-maps-but-my-customers-dont.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
