@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Technical site review prepared for La Beauté Modern MedSpa by FR Digital, September 2026.">
+<title>La Beauté Site Review</title>
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f6f7f9;
+  --surface:#ffffff;
+  --surface-2:#eef0f4;
+  --ink:#14161c;
+  --ink-2:#3d424e;
+  --ink-3:#6d7383;
+  --rule:#dbdfe7;
+  --rule-2:#c6ccd8;
+  --accent:#6d3355;
+  --accent-soft:#f0e6ec;
+  --crit:#a81f16;
+  --crit-soft:#fbe8e6;
+  --high:#9a5a0c;
+  --high-soft:#fbf0df;
+  --med:#3f6377;
+  --med-soft:#e5eef3;
+  --low:#6d7383;
+  --low-soft:#eceef2;
+  --ok:#2c6a4a;
+  --ok-soft:#e3f0e9;
+  --shadow:0 1px 2px rgba(20,22,28,.05), 0 8px 24px -16px rgba(20,22,28,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#101218;
+    --surface:#171a22;
+    --surface-2:#1e222c;
+    --ink:#eceef3;
+    --ink-2:#b9bfcd;
+    --ink-3:#868da0;
+    --rule:#2a2f3b;
+    --rule-2:#3a4150;
+    --accent:#d59cc0;
+    --accent-soft:#2b1c26;
+    --crit:#f18b80;
+    --crit-soft:#33191a;
+    --high:#e0aa5f;
+    --high-soft:#2e2314;
+    --med:#8db6cd;
+    --med-soft:#182530;
+    --low:#8b92a3;
+    --low-soft:#1d212a;
+    --ok:#79c39c;
+    --ok-soft:#152720;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101218;
+  --surface:#171a22;
+  --surface-2:#1e222c;
+  --ink:#eceef3;
+  --ink-2:#b9bfcd;
+  --ink-3:#868da0;
+  --rule:#2a2f3b;
+  --rule-2:#3a4150;
+  --accent:#d59cc0;
+  --accent-soft:#2b1c26;
+  --crit:#f18b80;
+  --crit-soft:#33191a;
+  --high:#e0aa5f;
+  --high-soft:#2e2314;
+  --med:#8db6cd;
+  --med-soft:#182530;
+  --low:#8b92a3;
+  --low-soft:#1d212a;
+  --ok:#79c39c;
+  --ok-soft:#152720;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+ 
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px 96px}
+@media(max-width:640px){.wrap{padding:0 16px 64px}}
+ 
+/* ---------- masthead ---------- */
+.mast{
+  border-bottom:2px solid var(--ink);
+  padding:56px 0 20px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  align-items:flex-end;
+  justify-content:space-between;
+}
+.mast h1{
+  font-family:"Newsreader",Georgia,serif;
+  font-weight:500;
+  font-size:clamp(2.1rem,5vw,3.1rem);
+  line-height:1.05;
+  letter-spacing:-.015em;
+  margin:0 0 8px;
+  text-wrap:balance;
+}
+.mast .sub{color:var(--ink-2);max-width:56ch;margin:0;font-size:1.02rem}
+.stamp{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.72rem;
+  line-height:1.7;
+  color:var(--ink-3);
+  text-align:right;
+  white-space:nowrap;
+}
+.stamp b{color:var(--ink-2);font-weight:500}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.7rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 14px;
+}
+ 
+/* ---------- vitals ---------- */
+.vitals{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+  margin:32px 0 0;
+}
+.vital{background:var(--surface);padding:16px 18px}
+.vital .k{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);
+  display:block;margin-bottom:6px;
+}
+.vital .v{
+  font-family:"Newsreader",Georgia,serif;
+  font-size:1.85rem;line-height:1;font-weight:500;
+  font-variant-numeric:tabular-nums;
+  display:block;
+}
+.vital .n{font-size:.78rem;color:var(--ink-3);display:block;margin-top:5px;line-height:1.4}
+.v-crit{color:var(--crit)}.v-ok{color:var(--ok)}.v-high{color:var(--high)}
+ 
+/* ---------- sections ---------- */
+section{margin-top:64px}
+h2{
+  font-family:"Newsreader",Georgia,serif;
+  font-weight:500;font-size:1.72rem;line-height:1.2;letter-spacing:-.01em;
+  margin:0 0 6px;text-wrap:balance;
+  padding-bottom:10px;border-bottom:1px solid var(--rule-2);
+}
+h2 .num{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.78rem;color:var(--ink-3);margin-right:12px;vertical-align:.28em;
+}
+h3{font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:1rem;margin:32px 0 10px;letter-spacing:-.005em}
+p{margin:0 0 14px;max-width:70ch}
+.lede{font-size:1.06rem;color:var(--ink-2);max-width:66ch}
+ul,ol{max-width:70ch;padding-left:20px;margin:0 0 14px}
+li{margin-bottom:7px}
+strong{font-weight:600}
+a{color:var(--accent);text-underline-offset:2px}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.86em}
+code{background:var(--surface-2);padding:1px 5px;border-radius:3px;word-break:break-word}
+ 
+/* ---------- callout ---------- */
+.call{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-left:3px solid var(--accent);
+  padding:20px 22px;
+  margin:24px 0;
+  box-shadow:var(--shadow);
+}
+.call.crit{border-left-color:var(--crit)}
+.call p:last-child{margin-bottom:0}
+.call .tag{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);display:block;margin-bottom:8px;
+}
+ 
+/* ---------- tables ---------- */
+.scroll{overflow-x:auto;margin:20px 0;border:1px solid var(--rule);background:var(--surface);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.875rem}
+th{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+  text-align:left;color:var(--ink-3);font-weight:500;
+  padding:11px 14px;border-bottom:1px solid var(--rule-2);
+  background:var(--surface-2);white-space:nowrap;
+}
+td{padding:11px 14px;border-bottom:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:none}
+td:first-child{color:var(--ink)}
+.num-col{font-variant-numeric:tabular-nums;white-space:nowrap}
+ 
+/* severity pills */
+.pill{
+  display:inline-block;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;font-weight:500;
+  padding:2px 8px;border-radius:2px;white-space:nowrap;
+}
+.p-crit{background:var(--crit-soft);color:var(--crit)}
+.p-high{background:var(--high-soft);color:var(--high)}
+.p-med{background:var(--med-soft);color:var(--med)}
+.p-low{background:var(--low-soft);color:var(--low)}
+.p-ok{background:var(--ok-soft);color:var(--ok)}
+.p-acc{background:var(--accent-soft);color:var(--accent)}
+.lbl{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;color:var(--ink-3)}
+ 
+/* ---------- finding cards ---------- */
+.finding{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-top:2px solid var(--crit);
+  padding:18px 20px;
+  margin-bottom:14px;
+  box-shadow:var(--shadow);
+}
+.finding .fid{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.7rem;color:var(--ink-3);letter-spacing:.08em;
+}
+.finding h4{margin:6px 0 8px;font-size:1.02rem;font-weight:600;letter-spacing:-.005em}
+.finding p{font-size:.92rem;margin-bottom:0;color:var(--ink-2)}
+.deadlist{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.78rem;list-style:none;padding:0;margin:12px 0 0;
+  border-top:1px solid var(--rule);
+}
+.deadlist li{
+  display:flex;flex-wrap:wrap;gap:4px 10px;
+  padding:7px 0;border-bottom:1px solid var(--rule);margin:0;color:var(--ink-2);
+}
+.deadlist .loc{color:var(--ink);min-width:210px}
+ 
+/* ---------- action plan ---------- */
+.plan{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:20px}
+.act{background:var(--surface);padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:6px 18px;align-items:start}
+.act .what{font-weight:500;color:var(--ink);font-size:.95rem}
+.act .why{grid-column:1/-1;font-size:.86rem;color:var(--ink-3);margin:0;max-width:74ch}
+.act .meta{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+ 
+/* ---------- honesty block ---------- */
+.honesty{background:var(--surface-2);border:1px dashed var(--rule-2);padding:22px 24px;margin-top:24px}
+.honesty h3{margin-top:0}
+.honesty ul{margin-bottom:0}
+.honesty li{font-size:.92rem;color:var(--ink-2)}
+ 
+/* ---------- letter ---------- */
+.letter{
+  background:var(--surface);border:1px solid var(--rule-2);
+  padding:34px 38px;margin-top:22px;box-shadow:var(--shadow);
+  font-family:"Newsreader",Georgia,serif;font-size:1.04rem;line-height:1.62;
+}
+@media(max-width:640px){.letter{padding:24px 22px}}
+.letter p{max-width:62ch;color:var(--ink-2)}
+.letter p:last-child{margin-bottom:0}
+.letter .sig{font-style:italic;color:var(--ink-3)}
+ 
+footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--ink-3)}
+footer a{color:var(--ink-3)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(prefers-reduced-motion:no-preference){
+  .finding,.call{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+ 
+<header class="mast">
+  <div>
+    <p class="eyebrow">Prepared by FR Digital for Stella Bakow Shamon</p>
+    <h1>La Beauté Modern MedSpa</h1>
+    <p class="sub">3756 Dempster St, Skokie, IL · <span class="mono">spalabeaute.com</span></p>
+  </div>
+  <div class="stamp">
+    <b>Crawled</b> 31 Aug – 9 Sep 2026<br>
+    <b>Pages</b> 8 indexable, +1 duplicate site<br>
+    <b>Method</b> live DOM, source, booking API<br>
+    <b>Rank scans</b> deferred; see §8
+  </div>
+</header>
+ 
+<div class="vitals">
+  <div class="vital"><span class="k">Bookable services</span><span class="v v-crit">0</span><span class="n">Booking page renders blank: no clinics, no services</span></div>
+  <div class="vital"><span class="k">Google rating</span><span class="v v-ok">4.9</span><span class="n">124 reviews, 27 in the last year</span></div>
+  <div class="vital"><span class="k">Treatment pages</span><span class="v v-crit">0</span><span class="n">Nearest competitor has 20</span></div>
+  <div class="vital"><span class="k">Sources on the new address</span><span class="v v-crit">2 of 12</span><span class="n">Google profile and Yelp have Skokie</span></div>
+  <div class="vital"><span class="k">Homepage copy</span><span class="v v-crit">297</span><span class="n">Visible words. 6,288 more are CSS-hidden</span></div>
+  <div class="vital"><span class="k">CSS payload</span><span class="v v-high">692<span style="font-size:.55em"> KB</span></span><span class="n">Render-blocking, of 1.1 MB total</span></div>
+</div>
+ 
+<section>
+  <h2><span class="num">01</span>The verdict</h2>
+  <p class="lede">On 30 August, searched from your own address, you ranked first for "med spa" and second for "botox". That is the expensive half of local SEO and it is already done. The move to Skokie now puts it in contact with the cheap half, which is not done.</p>
+  <p>A 4.9 rating across 124 Google reviews is years of goodwill that cannot be bought or shortcut, and it is almost certainly carrying your map pack placement on its own. Twenty-seven of those arrived in the last twelve months, so this is a current asset rather than an old one. Underneath it sits an eight-page site that names its own city on exactly one page, publishes zero pages for any individual treatment, carries structured data on the homepage only, and, the finding that matters, <strong>sends every booking click into an empty system that renders a blank white page</strong>.</p>
+  <p>Your Aesthetic Record account is live and correctly configured, with your phone number, logo and a working payment key. It contains zero locations and zero services, confirmed against a control call on the same session that returned real membership data, so the emptiness is real rather than a failed login. Someone reads about PRX-T33, decides, taps Book Now, and gets a white screen. That is not a search-rankings problem. That is a booking you never hear about.</p>
+  <p>Behind it sits a second problem with the same shape: a complete second website for La Beauté, last updated around 2020 and hosted on a marketing company's server, is still live and indexed, and it is the likeliest reason four sources publish four different sets of your business hours.</p>
+  <div class="call crit">
+    <span class="tag">The three priorities</span>
+    <p><strong>1.</strong> Get the structured data and the homepage title onto the Skokie address. They still say Lake Forest, and they are the first thing Google reads.<br>
+    <strong>2.</strong> Get online booking working, or take the buttons down. The booking page is empty and every Book Now leads to a white screen.<br>
+    <strong>3.</strong> Update BBB, Yelp and Facebook, and deal with the old website at spa.jcidmsites.com. All four still publish Lake Forest.</p>
+  </div>
+</section>
+ 
+<section>
+  <h2><span class="num">02</span>Critical findings</h2>
+ 
+  <div class="finding">
+    <span class="fid">F0 · CRITICAL · VERIFIED 1 SEP · RECHECKED 9 SEP 2026</span>
+    <h4>Online booking is empty, and the Google profile books through the same dead end</h4>
+    <p>The site's booking link redirects to <code>labeautemedspa.myaestheticrecord.com/online-booking</code>, which loads and renders <strong>nothing</strong>. Querying its own API from the page: <code>/clinics</code> returns <code>[]</code> and <code>/services</code> returns <code>[]</code>, both with a 200 status. The account itself is live and correct: <code>/config</code> reports "La Beau Te' Modern MedSpa", your real phone and website, a live Stripe key, and <code>is_services_active: true</code>. Aesthetic Record needs a location before it can display services; with zero locations there is nothing to render.</p>
+    <p style="margin-top:10px"><strong>The Appointments link on your Google Business Profile goes to the same place.</strong> It resolves to <code>/book/appointments?user_id=…</code>, which redirects to that identical empty booking app: byte-for-byte the same page the website buttons reach. That matters more than the website version: someone who finds you in the map pack books without ever loading spalabeaute.com, so this path has no fallback. Verified 9 September 2026.</p>
+    <p style="margin-top:10px"><strong>Caveat on intent:</strong> every Instagram caption on your own homepage says "DM us to book," and a ☎ Call button sits on every page. You may have moved to phone and DM deliberately. If so the configuration is not the bug; the website is, because it still fires eight booking buttons per page into an empty system with no message to the visitor.</p>
+  </div>
+ 
+  <div class="finding">
+    <span class="fid">F1 · HIGH · VERIFIED IN SOURCE</span>
+    <h4>Five booking buttons link to the homepage</h4>
+    <p>Separately from F0, these five never reach the booking system at all. The other buttons on the same pages point at the Aesthetic Record link, so this is a copy-paste error in the page builder rather than a platform limitation.</p>
+    <ul class="deadlist">
+      <li><span class="loc">/our-services</span><span>“Book Now” under PRX-T33</span></li>
+      <li><span class="loc">/our-services</span><span>“Book a Consultation” (page-foot CTA)</span></li>
+      <li><span class="loc">/injectable-services</span><span>“Book Now” under PRP / PDRN facial rejuvenation</span></li>
+      <li><span class="loc">/injectable-services</span><span>“Book a Consultation” (page-foot CTA)</span></li>
+      <li><span class="loc">/laser-services</span><span>“Book Now” under laser vein treatment</span></li>
+    </ul>
+  </div>
+ 
+  <div class="finding">
+    <span class="fid">F2 · CRITICAL · VERIFIED 2 SEP 2026</span>
+    <h4>A second live website, abandoned in 2020, is still publishing your old hours</h4>
+    <p><code>spa.jcidmsites.com</code> is a complete second website for this business: same name, same address, same phone. The domain <code>jcidmsites.com</code> carries the meta author "Just Click It Digital Marketing", so this sits on a marketing company's server rather than your own domain. Its <code>robots.txt</code> permits crawling, it carries no canonical back to the real site, and Google has multiple pages of it indexed.</p>
+    <p style="margin-top:10px">It is unambiguously the stale one: © 2020 in the footer, a COVID-19 Safety Plan section, "Make an Appointment" pointing at its own contact form rather than Aesthetic Record, and a menu missing PRX-T33 and the PDRN treatment the current site offers. Businesses add services; the site missing them is the old one.</p>
+    <p style="margin-top:10px"><strong>And it is the likeliest source of the hours problem.</strong> The old site publishes Mon–Fri 10–6 and Sat 10–4. So does BBB, whose file opened December 2021. The current site's schema says Tue/Thu/Fri 10–6, Wed 10–3, closed Monday and Saturday. The old site is still live and still publishing the older set, and citations that scrape it will keep reproducing them. Someone searching "med spa open Saturday" may be getting their answer from a website this business no longer uses.</p>
+    <p style="margin-top:10px"><span class="pill p-med">Unverified</span> <strong>Why it is still up, and who controls it, is unknown.</strong> A subdomain on a marketing company's hosting suggests a prior vendor relationship, but nothing observed says whether that relationship ended, or who holds the login. Note also that the current site is actively maintained (its sitemap was updated 13 July 2026), so this is one stale asset, not a neglected web presence.</p>
+  </div>
+ 
+  <div class="finding">
+    <span class="fid">F2b · HIGH · VERIFIED 2 SEP 2026</span>
+    <h4>The homepage has 297 words of visible copy, and looks like 6,600 to a crawler</h4>
+    <p>Raw HTML body text is 6,663 words. 6,288 of them sit inside a single Duda Instagram gallery as captions and hashtags, hidden by the page's own CSS: <code>.caption-text{display:none}</code> on galleries carrying <code>data-instagram</code> without <code>data-show-image-captions</code>. Strip the gallery, header and footer and the primary commercial page has <strong>297 words</strong>. Any word-count tool reading raw HTML reports a healthy page and misses this entirely.</p>
+  </div>
+ 
+  <div class="finding">
+    <span class="fid">F3 · HIGH · VERIFIED</span>
+    <h4>Zero individual treatment pages, and a competitor with 5 reviews has 20</h4>
+    <p>Every treatment lives as a paragraph on a shared category page. Nobody can rank a paragraph. Your reviews carry you in the map pack; they do not enter the organic results underneath it, and that is where a dedicated page for each treatment would compete. This matters more after a move, not less. A new area has to learn what you do.</p>
+  </div>
+ 
+  <div class="finding">
+    <span class="fid">F4 · HIGH · VERIFIED</span>
+    <h4>Four pages stack 4–6 H1 tags each; two pages have none</h4>
+    <p>On <code>/our-services</code> every treatment name is marked as an H1: six of them. Same pattern on injectables (5), laser (6) and body (4). Meanwhile <code>/contact</code> and <code>/landing</code> have no H1 at all. The page never declares what it is about, so the crawler has to guess, and the guess is spread across six competing claims.</p>
+  </div>
+</section>
+ 
+<section>
+  <h2><span class="num">03</span>On-page issues</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Page</th><th>Issue</th><th>Severity</th><th>Fix</th></tr></thead>
+      <tbody>
+        <tr><td>Every page</td><td>All booking buttons (and the Google profile Appointments link) lead to the same empty Aesthetic Record page: 0 clinics, 0 services</td><td><span class="pill p-crit">Critical</span></td><td>Restore the catalogue, or swap the buttons for call/DM links</td></tr>
+        <tr><td>3 service pages</td><td>5 booking CTAs href to <code>/</code></td><td><span class="pill p-high">High</span></td><td>Repoint to the Aesthetic Record booking URL</td></tr>
+        <tr><td>/landing</td><td>Byte-identical title and meta description to <code>/contact</code>; both indexable, both self-canonical, both in the sitemap</td><td><span class="pill p-crit">Critical</span></td><td>Canonical <code>/landing</code> to <code>/contact</code>, or noindex and drop it from the sitemap</td></tr>
+        <tr><td>All 7 interior pages</td><td>No city in any title tag</td><td><span class="pill p-high">High</span></td><td>Rewrite as <span class="mono">Treatment | Skokie, IL | La Beauté</span></td></tr>
+        <tr><td>/our-services, /injectable-services, /laser-services, /body-and-more</td><td>4–6 H1 tags per page</td><td><span class="pill p-high">High</span></td><td>One H1 per page; demote treatment names to H2</td></tr>
+        <tr><td>/contact, /landing</td><td>No H1 tag at all</td><td><span class="pill p-high">High</span></td><td>Add “Contact La Beauté Modern MedSpa | Skokie, IL”</td></tr>
+        <tr><td>/contact, /landing</td><td>Title is 25 characters: “Contact Us - Get in Touch”. No brand, no city</td><td><span class="pill p-high">High</span></td><td>Rewrite to 50–60 chars with brand and city</td></tr>
+        <tr><td>/our-services</td><td>Meta description is a comma-separated keyword list, not a sentence</td><td><span class="pill p-high">High</span></td><td>Write a 150-char sentence with a reason to click</td></tr>
+        <tr><td>/gallery</td><td>Meta description sells dermal fillers; the page is the staff bios</td><td><span class="pill p-med">Medium</span></td><td>Rewrite to match the page</td></tr>
+        <tr><td>All service pages</td><td>Nav says “Skin Rejuvenation” → lands on <code>/our-services</code>; “Meet the Staff” → lands on <code>/gallery</code></td><td><span class="pill p-med">Medium</span></td><td>Align slugs and anchor text</td></tr>
+        <tr><td>Every page</td><td>Nav contains an empty-text link to <code>/home</code>, a 200-status duplicate of <code>/</code></td><td><span class="pill p-med">Medium</span></td><td>Remove the link; canonical is already correct</td></tr>
+        <tr><td>/gallery</td><td>Links Instagram <code>labeautemedspaillinois</code>; every other page and the schema use <code>labeautemedspa_</code></td><td><span class="pill p-med">Medium</span></td><td>Pick one handle sitewide</td></tr>
+        <tr><td>Homepage</td><td>Meta description is 193 characters, truncated in results</td><td><span class="pill p-low">Low</span></td><td>Trim to ~155</td></tr>
+        <tr><td>Every page</td><td>Footer map link uses <code>http://</code></td><td><span class="pill p-low">Low</span></td><td>Change to https</td></tr>
+        <tr><td>All service pages</td><td>No contact form; the only forms are on /contact and /landing</td><td><span class="pill p-med">Medium</span></td><td>Add an inline consultation form to each</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<section>
+  <h2><span class="num">04</span>Technical checklist</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Check</th><th>Status</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>HTTPS</td><td><span class="pill p-ok">Pass</span></td><td>Valid; one <code>http://</code> outbound map link in the footer</td></tr>
+        <tr><td>robots.txt</td><td><span class="pill p-ok">Pass</span></td><td>Present, permissive, declares the sitemap</td></tr>
+        <tr><td>XML sitemap</td><td><span class="pill p-high">Warning</span></td><td>9 URLs, all priority 1.0, all lastmod 2026-07-13. Includes the duplicate <code>/landing</code></td></tr>
+        <tr><td>Canonicals</td><td><span class="pill p-ok">Pass</span></td><td>Self-referencing and correct; <code>/home</code> correctly points to <code>/</code></td></tr>
+        <tr><td>Structured data: homepage</td><td><span class="pill p-ok">Pass</span></td><td>Complete <code>MedicalBusiness</code>: NAP, geo, hours, sameAs, knowsAbout. Genuinely well built</td></tr>
+        <tr><td>Structured data: everywhere else</td><td><span class="pill p-crit">Fail</span></td><td>Zero JSON-LD on 7 of 8 pages. No <code>Service</code>, no <code>FAQPage</code>, no <code>aggregateRating</code></td></tr>
+        <tr><td>aggregateRating markup</td><td><span class="pill p-crit">Fail</span></td><td>4.9 / 124 reviews exist and are not marked up anywhere on the site</td></tr>
+        <tr><td>Mobile viewport</td><td><span class="pill p-ok">Pass</span></td><td>Responsive; <code>maximum-scale=5</code> permits zoom</td></tr>
+        <tr><td>Page weight</td><td><span class="pill p-high">Warning</span></td><td>1.1 MB / 72 requests on the homepage; 692 KB is render-blocking CSS</td></tr>
+        <tr><td>Homepage image load</td><td><span class="pill p-high">Warning</span></td><td>106 images, nearly all from the Instagram embed, on a page with 297 words of copy</td></tr>
+        <tr><td>Image alt text</td><td><span class="pill p-med">Warning</span></td><td>No missing alts, but the embed dumps full Instagram captions with hashtags into alt attributes</td></tr>
+        <tr><td>Lab load timing</td><td><span class="pill p-ok">Pass</span></td><td>FCP 712 ms, load 2.04 s on one desktop pass. Not field data; see the limits below</td></tr>
+        <tr><td>Broken internal links</td><td><span class="pill p-ok">Pass</span></td><td>All 9 internal URLs return 200; 404 handling is correct</td></tr>
+        <tr><td>Duplicate content</td><td><span class="pill p-crit">Fail</span></td><td><code>/landing</code> and <code>/contact</code> share a title and meta description verbatim</td></tr>
+        <tr><td>Duplicate site</td><td><span class="pill p-crit">Fail</span></td><td><code>spa.jcidmsites.com</code>: full second site, indexed, crawlable, no canonical, © 2020</td></tr>
+        <tr><td>Schema geo accuracy</td><td><span class="pill p-high">Warning</span></td><td>Coordinates are 212 m from your own Google place pin and 306 m from the Census geocode, copied from a Maps URL's viewport centre rather than the pin</td></tr>
+        <tr><td>Orphan pages</td><td><span class="pill p-high">Warning</span></td><td><code>/landing</code> has zero inbound internal links yet sits in the sitemap at priority 1.0, carrying unfinished form options ("New Option" ×8, "DermaplaningPRX-T33")</td></tr>
+        <tr><td>Visible content volume</td><td><span class="pill p-crit">Fail</span></td><td>297 visible words on the homepage; 6,288 more are CSS-hidden Instagram captions</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+ 
+<section>
+  <h2><span class="num">05</span>Name, phone and hours across your listings</h2>
+  <p>For a single-location med spa this section matters more than everything in the keyword table. Google reconciles the business across citations; contradictions dilute confidence.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Source</th><th>Business name as published</th><th>Hours</th><th>Phone</th></tr></thead>
+      <tbody>
+        <tr><td>spalabeaute.com schema <span class="pill p-ok">Current</span></td><td>La BeauTé Modern MedSpa</td><td>Tue/Thu/Fri 10–6, Wed 10–3. Closed Mon, Sat, Sun</td><td>224 706-6358</td></tr>
+        <tr><td><strong>spa.jcidmsites.com</strong> <span class="pill p-crit">Stale: © 2020</span></td><td>La Beau Té Modern Medical Spa</td><td>Mon–Fri 10–6, <strong>Sat 10–4</strong></td><td>224 706-6358</td></tr>
+        <tr><td>BBB <span class="lbl">file opened Dec 2021</span></td><td>La BeauTe' Medical Spa</td><td>Mon–Fri 10–6, <strong>Sat 10–4</strong></td><td>224 706-6358</td></tr>
+        <tr><td>Yelp <span class="pill p-ok">Updated 9 Sep</span></td><td>La Beau Té Med Spa</td><td>Tue–Fri 10–6. Closed Mon, Sat, Sun</td><td>n/a</td></tr>
+        <tr><td>Yahoo Local</td><td>La Beau Te Med Spa</td><td>Mon–Fri 10–6, Sat 10–4</td><td>224 706-6358</td></tr>
+        <tr><td>Fresha / Medical Spa Locator</td><td>La Beau Te Medical Spa</td><td>Mon/Wed/Fri 10–5, Tue/Thu 11–7, Sat 10–3</td><td>224 706-6358</td></tr>
+        <tr><td>Google Maps (site's own link)</td><td>La Beau Te' Modern MedSpa</td><td>Not readable without a browser</td><td>n/a</td></tr>
+        <tr><td>CareCredit</td><td>La Beaute med spa</td><td>n/a</td><td><strong>224 430-3519</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Every day of the week disagrees somewhere.</strong> The Mon–Fri-plus-Saturday set appears on the old site, on BBB and on Yahoo Local; Fresha publishes a third variant; the current site's schema is the fourth. Even the two corrected sources disagree with each other: your schema says Wednesday 10–3, the updated Yelp listing says Wednesday 10–6. The old site is the likeliest common source for the first group, since it is still live and still publishing them, but which set is <em>correct</em> is a question only you can answer, and the Google Business Profile is the tiebreaker for what customers are actually being shown.</p>
+  <p>Six spellings of one name is survivable; Google is good at entity resolution. A different phone number on CareCredit and a second crawlable website are not: they split the entity, and one of them answers a question customers ask before they book.</p>
+</section>
+ 
+<section>
+  <h2><span class="num">06</span>The move: what still points to Lake Forest</h2>
+  <p>Your Google Business Profile and your Yelp listing both carry the Skokie address, verified 9 September 2026. Yelp was still publishing Lake Forest a week earlier, so this is actively being worked through. Everything below has not caught up yet, and Google reconciles a business by comparing exactly these against each other.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Where</th><th>What it publishes</th><th>Why it matters</th><th>Fix</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Homepage title tag</strong></td><td>"…Laser Hair Removal in <strong>Lake Forest</strong>"</td><td>One of the strongest on-page location signals there is, and the line that shows in search results</td><td><span class="pill p-crit">Do first</span></td></tr>
+        <tr><td><strong>Homepage structured data</strong></td><td><code>840 S Waukegan Rd Ste 209, Lake Forest, IL 60045</code></td><td>The machine-readable address. This is the one Google reads first</td><td><span class="pill p-crit">Do first</span></td></tr>
+        <tr><td><strong>Schema coordinates</strong></td><td>42.2247, -87.8771 (Lake Forest)</td><td>Explicit latitude and longitude 20 miles from where you now work</td><td><span class="pill p-crit">Do first</span></td></tr>
+        <tr><td>/contact</td><td>Both addresses on the same page</td><td>Skokie 5 times, Lake Forest 3, Waukegan 3, Dempster 2</td><td><span class="pill p-crit">Do first</span></td></tr>
+        <tr><td>/gallery, /landing</td><td>Both addresses</td><td>Same conflict, lower-traffic pages</td><td><span class="pill p-crit">Do first</span></td></tr>
+        <tr><td>/privacy-policy</td><td>Title reads "med spa lake forest Chicago"</td><td>Minor, but it is a title tag naming the old city</td><td><span class="pill p-crit">Do first</span></td></tr>
+        <tr><td><strong>BBB</strong></td><td>840 South Waukegan Road Ste. 209</td><td>Feeds other directories that scrape it</td><td><span class="pill p-med">Claim &amp; update</span></td></tr>
+        <tr><td><strong>Yelp</strong></td><td>3756 Dempster St, Skokie (<em>already corrected</em>)</td><td>Was Lake Forest as recently as 2 September. Listed here so the record is complete</td><td><span class="pill p-ok">Done</span></td></tr>
+        <tr><td><strong>Facebook</strong></td><td>Lake Forest</td><td>Linked from your own site</td><td><span class="pill p-crit">Do first</span></td></tr>
+        <tr><td><strong>spa.jcidmsites.com</strong></td><td>Lake Forest, plus 2020 hours</td><td>A whole second indexed website with the old address on every page</td><td><span class="pill p-high">Needs access</span></td></tr>
+        <tr><td>Third-party directories</td><td>Lake Forest; one lists Bannockburn</td><td>Long tail; lower priority but they persist</td><td><span class="pill p-med">Ongoing</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <div class="call">
+    <span class="tag">What you had on 30 August</span>
+    <p>Searched from your own address, you ranked <strong>#1 for "med spa"</strong> and <strong>#2 for "botox"</strong>, measured five days before the Skokie content went live. At your own front door, proximity is at its maximum, so those positions were being carried by <em>relevance and prominence</em>: your reviews, your rating, and Google's confidence in you as a business.</p>
+    <p style="margin-top:10px"><strong>Prominence travels with you. Certainty about your address does not.</strong> That is the whole exposure here: the asset is intact, and the thing that converts it into a map position is currently contradicted by four sources.</p>
+  </div>
+ 
+  <p><span class="pill p-med">Unverified</span> Whether Google has already reprocessed the move, and what it has done to those positions, is not knowable from outside, and would not be worth measuring yet. See section 8.</p>
+ 
+  <h3>The order to do it in</h3>
+  <ol>
+    <li><strong>The structured data and the title tag.</strong> Highest signal, smallest effort, and entirely within your own control.</li>
+    <li><strong>The pages carrying both addresses</strong>: contact, gallery, landing, privacy policy.</li>
+    <li><strong>The old website.</strong> It is a complete second site with the old address on every page. It needs to come down or redirect, and it sits on a marketing company's server rather than your own domain.</li>
+    <li><strong>The major citations</strong> (BBB, Yelp, Facebook), which then propagate to the smaller directories.</li>
+    <li><strong>Re-measure</strong>, once the above agree with each other and Google has had time to see it.</li>
+  </ol>
+</section>
+ 
+<section>
+  <h2><span class="num">07</span>Action plan</h2>
+ 
+  <h3>Fix first: highest signal, lowest risk</h3>
+  <div class="plan">
+    <div class="act"><span class="what">Change the address in the homepage structured data, the schema coordinates and the title tag</span><span class="meta"><span class="pill p-crit">Impact: high</span></span><p class="why">The single highest-value change on this list. These are the fields Google reads first and they still name a city you have left. Entirely within your own control, no third party needed.</p></div>
+    <div class="act"><span class="what">Restore the booking catalogue, or replace every booking button with a call/DM link</span><span class="meta"><span class="pill p-crit">Impact: high</span></span><p class="why">Zero clinics and zero services means every booking click ends on a white screen. Nothing else on this list competes, and it is the whole revenue story.</p></div>
+    <div class="act"><span class="what">Repoint the five misrouted CTAs to the booking URL</span><span class="meta"><span class="pill p-high">Impact: medium</span></span><p class="why">Only worth doing after the catalogue is fixed; otherwise you are routing people to the same blank page more reliably.</p></div>
+    <div class="act"><span class="what">Get <code>spa.jcidmsites.com</code> taken down or 301'd to the real site</span><span class="meta"><span class="pill p-crit">Impact: high</span></span><p class="why">Removes an indexed duplicate entity and the likeliest source still feeding old hours into citations. The domain belongs to a marketing company rather than to you, so this is likely a conversation before it is a fix. First question is who still has access.</p></div>
+    <div class="act"><span class="what">Confirm current hours, then correct BBB, Yelp, Fresha and the directories</span><span class="meta"><span class="pill p-crit">Impact: high</span></span><p class="why">Every weekday disagrees somewhere across four sources. Do this after the old site is down, or the citations will drift back.</p></div>
+    <div class="act"><span class="what">Rewrite all 7 interior title tags to include treatment + Skokie + brand</span><span class="meta"><span class="pill p-crit">Impact: high</span></span><p class="why">Cheapest local relevance signal available. Two pages currently share a 25-character title with no brand or city.</p></div>
+    <div class="act"><span class="what">Noindex or canonical <code>/landing</code>, and remove it from the sitemap</span><span class="meta"><span class="pill p-high">Impact: medium</span></span><p class="why">Removes a verbatim duplicate of <code>/contact</code> from the index.</p></div>
+    <div class="act"><span class="what">Collapse each service page to a single H1; demote treatment names to H2</span><span class="meta"><span class="pill p-high">Impact: medium</span></span><p class="why">Gives four pages a single clear topic instead of five or six competing ones.</p></div>
+    <div class="act"><span class="what">Add <code>aggregateRating</code> markup and surface reviews on the site</span><span class="meta"><span class="pill p-crit">Impact: high</span></span><p class="why">Your best asset is currently visible only inside Google Maps. Star ratings in results lift click-through on every query you already rank for.</p></div>
+    <div class="act"><span class="what">Rewrite the /our-services and /gallery meta descriptions</span><span class="meta"><span class="pill p-med">Impact: low</span></span><p class="why">One is a keyword list; the other advertises fillers on the staff page.</p></div>
+    <div class="act"><span class="what">Consolidate to one Instagram handle sitewide</span><span class="meta"><span class="pill p-med">Impact: low</span></span><p class="why"><code>/gallery</code> points at a different account than every other page and the schema.</p></div>
+  </div>
+ 
+  <h3>Strategic: this quarter</h3>
+  <div class="plan">
+    <div class="act"><span class="what">Build six treatment pages: laser hair removal, Botox, dermal fillers, HydraFacial, microneedling, EmSculpt</span><span class="meta"><span class="pill p-crit">Impact: high</span><span class="pill p-high">Multi-day</span></span><p class="why">Written locally and specifically (your protocol, your pricing, your results), not definitions. Each with <code>Service</code> schema, an FAQ block, and an on-page form. Depends on the CTA fix shipping first.</p></div>
+    <div class="act"><span class="what">Publish pricing for at least one treatment category</span><span class="meta"><span class="pill p-crit">Impact: high</span><span class="pill p-high">Half day</span></span><p class="why">The highest-intent query class in the category, and the one every local competitor declines to answer. This is a commercial decision before it is an SEO one.</p></div>
+    <div class="act"><span class="what">Replace the Instagram-embed homepage with real conversion content</span><span class="meta"><span class="pill p-high">Impact: medium</span><span class="pill p-high">Half day</span></span><p class="why">106 images and 692 KB of blocking CSS support 297 words of copy. The embed is the page's largest cost and its weakest asset.</p></div>
+    <div class="act"><span class="what">Build genuine nearby-area pages for Evanston, Niles and Morton Grove</span><span class="meta"><span class="pill p-high">Impact: medium</span><span class="pill p-high">Multi-day</span></span><p class="why">Real local content only. Templated doorway pages carry a penalty risk and are not worth it.</p></div>
+    <div class="act"><span class="what">Establish a two-post-a-month publishing cadence</span><span class="meta"><span class="pill p-med">Impact: medium</span><span class="pill p-high">Ongoing</span></span><p class="why">Both of the competitors compared here publish; you currently have no blog at all.</p></div>
+  </div>
+</section>
+ 
+<section>
+  <h2><span class="num">08</span>What this review does not know</h2>
+  <div class="honesty">
+    <h3>Limits, stated up front</h3>
+    <ul>
+      <li><strong>Rank scanning was deliberately not run, and should not be yet.</strong> A business whose address disagrees across its profile, its website and its citations produces unstable results; you would be measuring the confusion rather than the business. The 30 August readings above predate the move and are the last clean baseline that will exist. Re-measure once the sources agree with each other and Google has had a few weeks to see it.</li>
+      <li><strong>No current ranking data.</strong> No rank tracker or geo-grid scan was run. Every statement about competitive position here is inferred from page inventory and SERP composition, not measured.</li>
+      <li><strong>No search volume or difficulty data.</strong> No Ahrefs or Semrush account was connected. The keyword table is a reasoned hypothesis.</li>
+      <li><strong>Review counts are confirmed; what drives them is not.</strong> 4.9 across 124 reviews, 27 of them in the last twelve months, read from the Google Business Profile on 8 September 2026. Whether that flow comes from a deliberate review request or happens on its own is unknown, and it is the difference between a system you can tune and luck you cannot.</li>
+      <li><strong>The duplicate-copy suspicion is unproven.</strong> The service copy reads like third-party health-publisher text. No plagiarism check was run, so it is not asserted as fact.</li>
+      <li><strong>Speed figures are lab, not field.</strong> FCP 712 ms and 2.04 s load came from one desktop pass on a fast connection. Real Core Web Vitals for mobile North Shore users will be worse. Pull CrUX data before making a speed claim.</li>
+      <li><strong>Nothing here explains <em>why</em> the second site is still up.</strong> The hosting domain belongs to a marketing company; that is observed. Whether a vendor relationship ended and who holds the credentials are unknown, and were not knowable from outside. That is a question for you to answer, not a finding for me to make.</li>
+      <li><strong>The booking finding could be deliberate.</strong> Zero clinics and zero services is verified fact. Whether it was switched off on purpose is not; your own Instagram says "DM us to book" on every post, which cuts the other way. So it is recorded here as what was observed (the booking page is empty and the site still points at it), and not as a claim about anyone's intent.</li>
+      <li><strong>Why no automated tool caught the booking problem.</strong> A correct link into an empty system still returns a 200 status, so every crawler, link checker and site-audit tool rates that path healthy. It is only visible to a person who clicks through to the end and then queries the platform directly. If a previous report told you the booking flow was fine, this is why.</li>
+      <li><strong>The GBP was only partly audited.</strong> The Appointments field was opened and followed to its destination (see F0). Categories, Services, products, Q&amp;A, photo cadence, post frequency and review keyword chips are all still unexamined, and for a med spa they likely matter more than half of what is above.</li>
+    </ul>
+  </div>
+</section>
+ 
+<section>
+  <h2><span class="num">09</span>What this list does not do</h2>
+ 
+  <p>Everything above is diagnosis. Most of the individual fixes are small, and the order to do them in is written out in section 7. None of that is the reason work like this sits undone for two years. The reason is that you are running a med spa, and four of these need an owner rather than a reader.</p>
+ 
+  <div class="honesty">
+    <h3>The four that need someone to finish them</h3>
+    <ul>
+      <li><strong>The booking catalogue.</strong> Restoring locations and services in Aesthetic Record means sitting with their support until the catalogue renders and then testing every button on every page. Nobody finds out it worked by reading about it.</li>
+      <li><strong>The 2020 website.</strong> Getting <code>spa.jcidmsites.com</code> down or redirected starts with tracing who controls a domain last touched six years ago. That is one email or it is a month of chasing, and there is no way to know which from the outside.</li>
+      <li><strong>Twelve sources, twelve claim processes.</strong> BBB, Yelp, Facebook, Fresha, Yahoo and the smaller directories each have their own verification. Correcting eleven of twelve leaves the contradiction in place, so this is finished or it is not started.</li>
+      <li><strong>Sequence, and proving it worked.</strong> Order matters here: correcting citations before the old site comes down means they drift back to the old address, and re-measuring before Google has reprocessed the move measures the confusion instead of the business. Nothing on this list is verified as fixed until the map is scanned again several weeks later and compared against the 30 August baseline.</li>
+    </ul>
+  </div>
+ 
+  <p>If you want to run this yourself, the sequence in section 7 is the one I would use and it is yours to keep. If you would rather it were someone else's job to finish it and prove it worked, that is the conversation, and it is a defined piece of work with an end date, not an open-ended arrangement.</p>
+</section>
+ 
+<footer>
+  <p>Prepared by Ryan Farmer, <a href="https://frdigital.net/">FR Digital</a>. Crawled between 31 August and 9 September 2026 via live DOM inspection and source HTML on spalabeaute.com, plus the booking platform's own API responses. Competitor data from theaestheticloungemedspa.com and magdalenamedspa.com. Review counts via a third-party directory and Yelp; hours via the Better Business Bureau, Yahoo Local and Fresha. No rank scanning or keyword-volume tooling was used; see section 8.</p>
+  <p style="margin-top:10px">Questions, or anything here you think is wrong: <a href="mailto:ryan@frdigital.net">ryan@frdigital.net</a> · <a href="tel:+16303106046">630-310-6046</a></p>
+</footer>
+ 
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
+ 
